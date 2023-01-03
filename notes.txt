@@ -1,0 +1,4 @@
+Notes:
+
+- #2 Welcome to Javascript
+https://www.notion.so/Basics-of-JS-98705e3da40542f2aacf37a67299b938
