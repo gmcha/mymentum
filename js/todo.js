@@ -4,10 +4,19 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
 
+function paintToDo(newTodo){
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    li.appendChild(span); // span을 li 안에 넣음
+    span.innerText = newTodo; // span안에 todo 넣기
+    toDoList.appendChild(li); // ul에 li 넣기
+}
+
 function handleToDoSubmit(event){
-    event.preventDefault(); // 브라우저가 default로 form을 submit하는 것을 막음
-    const newTodo = toDoInput.value; // 임의로 새로운 todo를 변수에 저장
-    toDoInput.value = ""; // 빈 값을 넣어 브라우저 상에는 submit 한 것처럼 표시
+    event.preventDefault(); 
+    const newTodo = toDoInput.value; 
+    toDoInput.value = ""; 
+    paintToDo(newTodo); // todo를 입력시킬 함수 실행
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
