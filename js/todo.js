@@ -39,7 +39,7 @@ function handleToDoSubmit(event){
         id: Date.now(),
     };
     toDos.push(newTodoObj);
-    paintToDo(newTodo); 
+    paintToDo(newTodoObj); 
     saveToDos();
 }
 
