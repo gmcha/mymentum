@@ -17,14 +17,21 @@ body {
     align-items: center;
 }
 
-input, button {
+button {
     background-color: transparent;
     border-color: transparent;
+    cursor: pointer;
 }
 
 input {
     font-size: 22px;
     caret-color: #fafafa;
+    background-color: transparent;
+    border-width: 0 0 2px;
+    border-color: white;
+    outline: none;
+    color: inherit;
+    text-align: center;
 }
 
 input::placeholder {
@@ -43,6 +50,9 @@ input::placeholder {
 }
 
 #todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 12px;
 }
 
@@ -87,4 +97,8 @@ input::placeholder {
 img {
     width: 100vw;
     height: 100vh;
+}
+
+#weather {
+    color: black;
 }

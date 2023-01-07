@@ -14,22 +14,27 @@
     </div>
     <div class="center">
         <h2 id="clock">00:00</h2>
+        <span class="hidden" id="login-description">Type your name and press enter.</span>
         <form class="hidden" id="login-form">
-            <input required maxlength="15" size="50" type="text" placeholder="Type your name here">
+            <input required maxlength="15" size="30" type="text">
             <!-- <button>Log In</button> -->
         </form>
         <h1 id="greeting" class="hidden"></h1>
         <form id="todo-form">
-            <input type="text" size="50" placeholder="Write a To Do and Press Enter." required>
+            <span>Write a to do and press enter.</span>
+            <input type="text" size="30" required>
         </form>
         <ul id="todo-list"></ul>
     </div>
-
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
-    <!-- <script src="js/weather.js"></script> -->
+    <script src="js/weather.js"></script>
 </body>
 </html>

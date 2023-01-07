@@ -1,4 +1,4 @@
-const API_KEY = "apikey";
+const API_KEY = "api";
 
 function onGeoOk(position){
     const lat = position.coords.latitude;
@@ -12,7 +12,7 @@ function onGeoOk(position){
     });
 }
 function onGeoError(){
-    alert("Can't find you. No weather for you.");
+    alert("Sorry, we can't find where you are. No weather information loaded.");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
